@@ -460,6 +460,7 @@ span {
 .projects-box img {
     width: 30rem;
     height: auto;
+    max-height: 30rem;
     border-radius: 50%;
     border: 3px solid var(--main-color);
     box-shadow: 0 0 25px var(--main-color);
