@@ -77,7 +77,7 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 30vh;
     padding: 10rem 12% 10rem;
 }
 
@@ -695,4 +695,45 @@ iframe {
     width: 90%;
     height: 80vh;
     border: 0;
+}
+
+#commits-section {
+    background-color: var(--second-bg-color);
+    padding: 5rem 12%;
+    text-align: center;
+}
+
+#commits-section h2 {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+    color: var(--text-color);
+    text-shadow: 0 0 10px var(--main-color);
+}
+
+#commits-section label {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px var(--main-color);
+}
+
+#commits-container {
+    width: 100%;  /* Make the container take full width */
+    max-width: 1000px;  /* Limit the max width for larger screens */
+    margin: 0 auto;  /* Center the container */
+    overflow: hidden;  /* Hide overflow */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    min-height: 200px;  /* Ensure a minimum height */
+}
+
+#commits {
+    width: 800px;  /* Set the original width */
+    height: 200px;  /* Set the original height */
+    transform-origin: top left;  /* Scale from the top-left corner */
+    border: none;  /* Remove border */
+    transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
 }
