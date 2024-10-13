@@ -39,9 +39,11 @@
             </div>
         </div>
 
+        <a href="#about-me">
         <div class="home-img">
             <img src="img/home.jpg" alt="">
         </div>
+        </a>
         
     </section>
 
@@ -103,7 +105,7 @@
                 <div class="timeline-date">2019</div>
                 <div class="timeline-content">
                     <h3>GCSEs</h3>
-                    <p>I studied at The Manchester Grammar School</p>
+                    <p>I studied at The Manchester Grammar School where I achieved 8x9's and 2x8's</p>
                 </div>                
             </div>
 
@@ -112,7 +114,8 @@
                 <div class="timeline-date">2021</div>
                 <div class="timeline-content">
                     <h3>A Levels</h3>
-                    <p>I studied Maths, Further Maths, Physics and Electronics at The Manchester Grammar School</p>
+                    <p>I studied Maths, Further Maths, Physics and Electronics at The Manchester Grammar School where I achieved A* 
+                        grades in every subject</p>
                 </div>                
             </div>
     
@@ -121,31 +124,32 @@
                 <div class="timeline-date">2023</div>
                 <div class="timeline-content">
                     <h3>University</h3>
-                    <p>I'm studying Electronic and Information Engineering at Imperial College London</p>
+                    <p>I'm studying Electronic and Information Engineering at Imperial College London, where I'm 
+                        predicted a First-Class Honours
+                    </p>
                 </div>               
             </div>
 
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
-                <div class="timeline-date">2023-24</div>
+                <div class="timeline-date">2024</div>
                 <div class="timeline-content">
                     <h3>Dean's List 2023-24</h3>
-                    <p>I achieved Dean's List for the 2023-24 year at Imperial College London</p>
+                    <p>I achieved Dean's List for the 2024 year at Imperial College London, ranking within the top 5% (10 students) in 
+                        the year</p>
                 </div>               
             </div>
             
-            <a href="https://github.com/ollycassidy13/CompressedLUT">
             <div class="timeline-item">
                 <div class="timeline-dot"></div>
                 <div class="timeline-date">2024</div>
                 <div class="timeline-content">
                     <h3>Undergraduate Research Opportunity</h3>
-                    <p>I undertook a research opportunity into the reduction of LUT utilisation when using LUT based NN models 
+                    <p>I undertook a research opportunity focusing on reducing LUT utilisation when implementing LUT based NN models 
                         on FPGA devices
                     </p>
                 </div>               
             </div>
-            </a>
         </div>
     </section>
 
@@ -161,23 +165,16 @@
     <section class="projects" id="projects">
         <div class="projects-box">
             <h2 class="heading">Projects</h2>
-
+            <label for="projects">Click on the projects to learn more!</label>
+            <div style="padding-top: 20px;"></div>
             <div class="wrapper">
 
-                <div class="project-item">
-                    <img src="img/collabify1.png" alt="img1">
-                    <h2>Collabify</h2>
-                    <p>Coming Soon!!</p>
-                </div>
-
-                <a href="landlinesim.html">
-                <div class="project-item">
-                    <img src="img/landline.jpg" alt="img1">
-                    <h2>Landline</h2>
-                    <p>This project was to create a landline using Op Amps, logic gates and flip flops. 
-                        A PCM transmitter and reciever pair was used, with a fibre optic cable used for data transmission between
-                        the transmitter/reciever. I also presented this project at the Craft! X Scale Down Symposium.</p>
-                </div>
+                <a href="https://github.com/ollycassidy13">
+                    <div class="project-item">
+                        <img src="img/reducedlut.JPG" alt="img1">
+                        <h2>ReducedLUT</h2>
+                        <p>Coming soon!!</p>
+                    </div>
                 </a>
 
                 <a href="https://github.com/ollycassidy13/nids">
@@ -192,12 +189,52 @@
                 </div>
                 </a>
 
+                <a href="landlinesim.html">
+                <div class="project-item">
+                    <img src="img/landline.jpg" alt="img1">
+                    <h2>Landline</h2>
+                    <p>This project was to create a landline using Op Amps, logic gates and flip flops. 
+                        A PCM transmitter and reciever pair was used, with a fibre optic cable used for data transmission between
+                        the transmitter/reciever. This project was presented at the Craft! X Scale Down Symposium.</p>
+                </div>
+                </a>
+
+                <a href="https://github.com/ollycassidy13/CompressedLUT">
+                <div class="project-item">
+                    <img src="img/lut.png" alt="img1">
+                    <h2>CompressedLUT</h2>
+                    <p>I updated the CompressedLUT open-source code from FPGA 2024 such that for application to
+                        LUT based NN's such as LogicNets or NeuraLUT. I ensured it was lossless when testing the 
+                        Verilog based model using Verilator.
+                    </p>
+                </div>
+                </a>
+
+                <a href="https://github.com/ollycassidy13">
+                <div class="project-item">
+                    <img src="img/collabify1.png" alt="img1">
+                    <h2>Collabify</h2>
+                    <p>Coming Soon!!</p>
+                </div>
+                </a>
+
+                <a href="https://github.com/ollycassidy13/oh-my-xilinx">
+                <div class="project-item">
+                    <img src="img/vivado.webp" alt="img1">
+                    <h2>oh-my-xilinx</h2>
+                    <p>I updated the oh-my-xilinx open-source code such that it could synthesising multiple
+                        LUT based NN's in NeuraLUT in parallel. I ensured it was compatible with the toolflow I updated during
+                        my UROP placement.
+                    </p>
+                </div>
+                </a>
+
                 <a href="https://github.com/ollycassidy13/Snake">
                 <div class="project-item">
                     <img src="img/snake.png" alt="img1">
                     <h2>Snake Game</h2>
-                    <p>I used Java to implement a Snake game with a GUI, which I then packaged to create 
-                        an executable for Windows. 
+                    <p>I developed an object-oriented Snake game using Java, complete with a graphical user interface (GUI). 
+                        After finishing the implementation, I packaged the game to create a standalone executable for Windows.
                     </p>
                 </div>
                 </a>
@@ -211,14 +248,6 @@
                         with a clean UI featuring a rotating vinyl player. 
                         Currently I’m working on moving to an Electron framework, 
                         and adding a 3D vinyl player animation using Three.js.</p>
-                </div>
-                </a>
-
-                <a href="https://github.com/ollycassidy13/CompressedLUT">
-                <div class="project-item">
-                    <img src="img/lut.png" alt="img1">
-                    <h2>LUT</h2>
-                    <p>Coming Soon!!</p>
                 </div>
                 </a>
 
@@ -242,7 +271,7 @@
                         The control system used counters and a clock which was synchronised between the transmitter/receiver.</p>
                 </div>
 
-                <a href="https://github.com/ollycassidy13">
+                <a href="https://lego-design.vercel.app/">
                 <div class="project-item">
                     <img src="img/lego.png" alt="img1">
                     <h2>Lego Minifigure Design</h2>
@@ -252,6 +281,14 @@
                         I am currently working to move the page to a Swift app for iOS.</p>
                 </div>
                 </a>
+
+                <div class="project-item">
+                    <img src="img/shop_counter.jpg" alt="img1">
+                    <h2>Shop Counter</h2>
+                    <p>I used logic gates and D flip-flops to implement sequential logic for a shop counter. I used two light
+                        gates to track peoples movements through a door, before the sequential logic determined the persons 
+                        direction of travel and therefore the direction in which the counter should count.</p>
+                </div>
 
             </div>
         </div>
@@ -264,9 +301,9 @@
         </div>
 
         <ul class="list">
-            <li>
+            <!-- <li>
                 <a href="#">FAQs</a>
-            </li>
+            </li> -->
 
             <li>
                 <a href="#home">Home</a>
@@ -278,6 +315,10 @@
 
             <li>
                 <a href="#education">Education</a>
+            </li>
+
+            <li>
+                <a href="#commits-section">Commits</a>
             </li>
 
             <li>

@@ -272,6 +272,98 @@ span {
     margin: 5rem 0;
 }
 
+
+.about-me {
+    background: var(--bg-color);
+    padding: 2rem; /* Adjust padding as necessary */
+}
+
+.about-me h2 {
+    margin-bottom: 5rem;
+    color: white;
+}
+
+.about-me-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 2.5rem;
+    align-items: start;
+}
+
+.about-me-box {
+    background-color: var(--main-color);
+    border-radius: 3rem;
+    border: 5px solid transparent;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+    overflow: hidden; /* Ensure content doesn't overflow */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Ensure content starts from the top */
+    height: auto; /* Allow the box to grow based on content */
+    min-height: 200px; /* Set a minimum height */
+}
+
+
+.about-me-box:hover {
+    transform: scale(1.03);
+    height: auto; /* Ensure box height remains flexible */
+    transition: transform 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    .about-me-container {
+        grid-template-columns: 1fr; /* Stack boxes vertically */
+    }
+
+    .about-me-box {
+        height: auto; /* Allow the box to grow with content */
+        padding: 2rem; /* Keep padding for small screens */
+    }
+
+    .about-me-info p {
+        font-size: 1.4rem; /* Slightly smaller font for small screens */
+        line-height: 1.5;
+    }
+}
+
+.about-me-box .about-me-info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* max-height: 200px; */
+    justify-content: left;
+    align-items: baseline;
+    padding: 2rem; 
+}
+
+.about-me-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    line-height: 1.5; 
+}
+
+.about-me-info h4 {
+    margin-top: 0; 
+    margin-bottom: 1rem; 
+    font-size: 3rem; 
+    font-weight: 800; 
+    line-height: 2;
+    color: black;
+}
+
+.about-me-info p {
+    font-size: 1.6rem; 
+    white-space: normal;
+    word-wrap: break-word; 
+    line-height: 1.7; 
+    font-weight: 600;
+    color: black;
+}
+
 .education {
     padding: 100px 15px;
     background: var(--second-bg-color);
@@ -380,65 +472,6 @@ span {
 
 ::-webkit-scrollbar-track {
     background-color: var(--bg-color);
-}
-
-.about-me {
-    background: var(--bg-color);
-    padding: 2rem; /* Adjust padding as necessary */
-}
-
-.about-me h2 {
-    margin-bottom: 5rem;
-    color: white;
-}
-
-.about-me-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 2.5rem;
-}
-
-.about-me-box {
-    background-color: var(--main-color);
-    height: auto;
-    border-radius: 3rem;
-    border: 5px solid transparent;
-    cursor: pointer;
-    transition: 0.4s ease-in-out;
-}
-
-.about-me-box:hover {
-    background: white;
-    color: black;
-    border: 5px solid var(--main-color);
-    transform: scale(1.03);
-}
-
-.about-me-box .about-me-info {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    max-height: 200px;
-    justify-content: left;
-    align-items: baseline;
-    padding: 2rem; /* Adjust this padding as necessary */
-}
-
-.about-me-info h4 {
-    color: black;
-    font-size: 3rem;
-    font-weight: 800;
-    line-height: 2;
-}
-
-.about-me-info p {
-    color: black;
-    font-size: 1.6rem;
-    font-weight: 600;
-    max-height: 100px;
-    line-height: 1.7;
-    margin: auto;
 }
 
 .projects {
@@ -707,12 +740,12 @@ iframe {
     font-size: 6rem;
     margin-bottom: 3rem;
     color: var(--text-color);
-    text-shadow: 0 0 10px var(--main-color);
+    /* text-shadow: 0 0 10px var(--main-color); */
 }
 
 #commits-section label {
     display: block;
-    font-size: 1.8rem;
+    font-size: 2rem;
     color: var(--main-color);
     margin-bottom: 2rem;
     text-shadow: 0 0 10px var(--main-color);
@@ -736,4 +769,12 @@ iframe {
     transform-origin: top left;  /* Scale from the top-left corner */
     border: none;  /* Remove border */
     transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+}
+
+#projects label {
+    display: block;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px var(--main-color);
 }
