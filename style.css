@@ -12,7 +12,7 @@
     --bg-color: #080808;
     --second-bg-color: #131313;
     --text-color: white;
-    --main-color: #11fbad; /* Consistent naming */
+    --main-color: #11fbad; 
 }
 
 html {
@@ -503,6 +503,7 @@ span {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 3rem;
+    place-items: center;
 }
 
 .project-item {
@@ -777,4 +778,86 @@ iframe {
     color: var(--main-color);
     margin-bottom: 2rem;
     text-shadow: 0 0 10px var(--main-color);
+}
+/*****************************************/
+/*     PAPERS SECTION (1 × n layout)     */
+/*****************************************/
+.papers {
+    background: var(--second-bg-color); 
+}
+
+.papers-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.papers .heading {
+    margin: 5rem 0;
+    font-size: 8rem; 
+    text-align: center;
+}
+
+.papers-box label {
+    font-size: 2rem;
+    color: var(--main-color);
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px var(--main-color);
+}
+
+.papers-box .papers-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-items: center; 
+}
+
+.paper-item {
+    width: 100%;
+    max-width: 450px;
+
+    min-height: 500px;
+    background: rgba(0, 0, 0, 0.7);
+    border: 3px solid rgba(238, 238, 238, 0.2);
+    border-radius: 2rem;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.paper-item:hover {
+    border: 3px solid var(--main-color);
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 50px var(--main-color);
+}
+
+.paper-item img {
+    width: 30rem;
+    max-height: 30rem;
+    border-radius: 50%;
+    border: 3px solid var(--main-color);
+    box-shadow: 0 0 25px var(--main-color);
+}
+
+.paper-item h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.paper-item p {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    max-width: 70ch;
 }
