@@ -1,5 +1,7 @@
 # Portfolio Website
 
+> This is my old portfolio, and will soon be taken down. Please look at my new portfolio which can be found [here](https://github.com/ollycassidy13/Olly-Cassidy)
+
 Welcome to my portfolio website! This site showcases my work, education, and professional background. Below, you'll find an overview of the sections included in the website.
 
 To visit my website simply click [here](https://ollycassidy13.github.io/)
